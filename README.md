@@ -9,6 +9,14 @@ It was built to watch the internal UARTs of an IP camera (T30 ⇄ XR871 link
 plus a debug console) and is now used as a general-purpose serial console for
 any 3.3 V device, e.g. Thingino cameras.
 
+![Monitor](docs/screenshots/monitor.png)
+
+| Terminal | Settings |
+|---|---|
+| ![Terminal](docs/screenshots/terminal.png) | ![Settings](docs/screenshots/settings.png) |
+
+*Screenshots with sample data.*
+
 ## Features
 
 - **Monitor**: live view of all three channels with timestamps. It has:
@@ -179,3 +187,11 @@ need a different partition table, which has to be flashed once over USB.
 - [xterm.js](https://github.com/xtermjs/xterm.js) and xterm-addon-fit, MIT
   licence (see `web-vendor/*/LICENSE`).
 - Arduino core for ESP32 / ESP-IDF, mbedTLS (via PlatformIO).
+
+The firmware's Help page (`/help#licences`) carries the xterm.js licence
+text, so the notice also travels with every flashed device.
+
+## License
+
+MIT, see [LICENSE](LICENSE). Third-party parts keep their own licences
+(above).

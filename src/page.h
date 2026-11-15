@@ -457,6 +457,7 @@ td,th{border:1px solid var(--bd2);padding:6px 10px;text-align:left;vertical-alig
 .warn{border-left:3px solid #e0a050;background:color-mix(in srgb,#e0a050 10%,transparent);padding:8px 12px;border-radius:6px;margin:10px 0}
 .toc{display:flex;flex-wrap:wrap;gap:6px;padding:12px 16px;border-bottom:1px solid var(--bd2)}
 .toc a{padding:3px 10px;border:1px solid var(--bd);border-radius:999px;font-size:12.5px;color:var(--mut)}
+pre.lic{white-space:pre-wrap;font:11.5px/1.45 ui-monospace,monospace;color:var(--mut);background:var(--bg);border:1px solid var(--bd2);border-radius:6px;padding:10px 12px}
 .toc a:hover{color:var(--acc);border-color:var(--acc)}
 </style></head><body>
 <div class="bar">
@@ -466,7 +467,7 @@ td,th{border:1px solid var(--bd2);padding:6px 10px;text-align:left;vertical-alig
 <main>
 <section class="card">
  <h2>Quick guide</h2>
- <nav class="toc"><a href="#wiring">Wiring</a><a href="#monitor">Monitor</a><a href="#terminal">Terminal</a><a href="#tx">Sending &amp; safety</a><a href="#settings">Settings</a><a href="#network">Network access</a><a href="#update">Update</a></nav>
+ <nav class="toc"><a href="#wiring">Wiring</a><a href="#monitor">Monitor</a><a href="#terminal">Terminal</a><a href="#tx">Sending &amp; safety</a><a href="#settings">Settings</a><a href="#network">Network access</a><a href="#update">Update</a><a href="#licences">Licences</a></nav>
  <div class="doc">
 
 <h3 id="wiring">Wiring</h3>
@@ -524,6 +525,53 @@ td,th{border:1px solid var(--bd2);padding:6px 10px;text-align:left;vertical-alig
 
 <h3 id="update">Firmware update</h3>
 <p>In the project folder <code>esp32mon</code>: <code>./update.sh</code> builds the firmware and installs it over WiFi. The first time, plug the ESP32 in via USB: the update password is read and saved, after that no cable is needed.</p>
+<h3 id="licences">Licences</h3>
+<p>Lu-Fi UART Monitor is MIT licensed:</p>
+<pre class="lic">MIT License
+
+Copyright (c) 2026 Lu-Fi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+<p>This firmware contains <b>xterm.js</b> 5.3.0 and <b>xterm-addon-fit</b> 0.8.0 (xterm-addon-fit: Copyright (c) 2019, The xterm.js authors (https://github.com/xtermjs/xterm.js)), MIT licensed:</p>
+<pre class="lic">Copyright (c) 2017-2019, The xterm.js authors (https://github.com/xtermjs/xterm.js)
+Copyright (c) 2014-2016, SourceLair Private Company (https://www.sourcelair.com)
+Copyright (c) 2012-2013, Christopher Jeffrey (https://github.com/chjj/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</pre>
+<p>Built with the Arduino core for ESP32 (LGPL-2.1), ESP-IDF (Apache-2.0) and mbedTLS (Apache-2.0).</p>
+
  </div>
 </section>
 </main>
